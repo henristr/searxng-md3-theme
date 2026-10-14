@@ -1,0 +1,68 @@
+@import (css) url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background: var(--md3-surface);
+  color: var(--md3-on-surface);
+  font-family: var(--gm-font-sans);
+}
+
+a {
+  color: var(--md3-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#search,
+#results,
+#search_form {
+  max-width: 980px;
+  margin-inline: auto;
+}
+
+input,
+select,
+textarea,
+button {
+  font: inherit;
+  border-radius: var(--shape-full);
+  border: 1px solid var(--md3-outline-variant);
+  background: var(--md3-surface-container-low);
+  color: var(--md3-on-surface);
+  min-height: 40px;
+}
+
+button,
+input[type='submit'],
+input[type='button'] {
+  background: var(--md3-primary);
+  color: var(--md3-on-primary);
+  border-color: transparent;
+  padding: 0 18px;
+  transition: box-shadow 0.2s ease, transform 0.2s ease, filter 0.2s ease;
+}
+
+button:hover,
+input[type='submit']:hover,
+input[type='button']:hover {
+  box-shadow: var(--elevation-1);
+  filter: brightness(1.05);
+}
+
+button:active,
+input[type='submit']:active,
+input[type='button']:active {
+  transform: translateY(1px);
+}
+
+:focus-visible {
+  outline: 3px solid var(--md3-state-focus);
+  outline-offset: 2px;
+}
